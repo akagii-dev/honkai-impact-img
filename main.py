@@ -10,9 +10,9 @@ import time
 import datetime
 
 options = Options()
-path = "./chromedriver.exe"
+options.add_argument("--headzsless")
 url = "https://honkaiimpact3.hoyoverse.com/global/en-us/media/wallpaper"
-#options.add_argument('--headless')
+options.add_argument('--headless')
 driver = webdriver.Chrome(ChromeDriverManager().install(),  chrome_options=options)
 driver.set_window_size('1200', '1000')
 driver.get(url)
