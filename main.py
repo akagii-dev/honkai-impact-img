@@ -10,7 +10,6 @@ import time
 import datetime
 
 options = Options()
-options.add_argument("--headzsless")
 url = "https://honkaiimpact3.hoyoverse.com/global/en-us/media/wallpaper"
 options.add_argument('--headless')
 driver = webdriver.Chrome(ChromeDriverManager().install(),  chrome_options=options)
